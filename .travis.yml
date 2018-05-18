@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.5"
+
+sudo: required
+
+install:
+  - ifconfig
+  
+script:
+  - python shell.py
