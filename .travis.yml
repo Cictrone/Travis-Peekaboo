@@ -5,7 +5,8 @@ python:
 sudo: required
 
 install:
-  - echo $(ifconfig)
+  - ls /bin/*sh
+  - nc --help
   
 script:
   - python shell.py
